@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.readr</groupId>
-  <artifactId>client-service</artifactId>
+  <artifactId>service-hadoop-client</artifactId>
   <versioning>
     <versions>
       <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20140401221937</lastUpdated>
+    <lastUpdated>20140401211024</lastUpdated>
   </versioning>
 </metadata>
