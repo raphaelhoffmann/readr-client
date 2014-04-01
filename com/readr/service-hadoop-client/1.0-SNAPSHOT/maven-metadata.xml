@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>com.readr</groupId>
-  <artifactId>service-db-client</artifactId>
+  <artifactId>service-hadoop-client</artifactId>
   <version>1.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20140401.193838</timestamp>
+      <timestamp>20140401.193842</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20140401193838</lastUpdated>
+    <lastUpdated>20140401193842</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20140401.193838-1</value>
-        <updated>20140401193838</updated>
+        <value>1.0-20140401.193842-1</value>
+        <updated>20140401193842</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20140401.193838-1</value>
-        <updated>20140401193838</updated>
+        <value>1.0-20140401.193842-1</value>
+        <updated>20140401193842</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
