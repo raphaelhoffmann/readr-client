@@ -10,7 +10,7 @@ import org.glassfish.jersey.jackson.JacksonFeature;
 
 public class ReadrInteractiveClient {
 
-	public static String DEFAULT_HOST = "localhost";
+	public static String DEFAULT_HOST = "preview.readr.com";
 	public static int    DEFAULT_PORT = 9070;
 	
 	private String host;

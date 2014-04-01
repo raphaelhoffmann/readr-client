@@ -1,4 +1,4 @@
-package com.readr.service.db.client;
+package com.readr.service.hadoop.client;
 
 import javax.net.ssl.SSLContext;
 import javax.ws.rs.client.Client;
@@ -9,26 +9,24 @@ import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.glassfish.jersey.jackson.JacksonFeature;
 
-public class ReadrDBClient {
+public class ReadrHadoopClient {
 
 	public static String DEFAULT_HOST = "preview.readr.com";
-	public static int    DEFAULT_PORT = 9080;
+	public static int    DEFAULT_PORT = 9060;
 	
 	private String host;
 	private int port;
 	
 	private Client client;
 
-	public final MeaningClient meaning;
-	public final TextClient text;
-	public final ProjectClient project;
-	public final ModuleClient module;
+	public final JobClient job;
+	public final ProcessorClient processor;
 	
-	public ReadrDBClient() throws Exception {
+	public ReadrHadoopClient() throws Exception {
 		this(DEFAULT_HOST, DEFAULT_PORT);
 	}
 	
-	public ReadrDBClient(String host, int port) throws Exception {
+	public ReadrHadoopClient(String host, int port) throws Exception {
 		this.host = host;
 		this.port = port;
 
@@ -54,13 +52,11 @@ public class ReadrDBClient {
         
         String url = "https://" + host + ":" + port;
         
-        meaning = new MeaningClient(client, url);
-        text = new TextClient(client, url);
-        project = new ProjectClient(client, url);
-        module = new ModuleClient(client, url);
+        job = new JobClient(client, url);
+        processor = new ProcessorClient(client, url);
 	}
 
-	public ReadrDBClient(String host, int port, String user, String password) throws Exception {
+	public ReadrHadoopClient(String host, int port, String user, String password) throws Exception {
 		this(host, port);
 		authenticate(user, password);
 	}

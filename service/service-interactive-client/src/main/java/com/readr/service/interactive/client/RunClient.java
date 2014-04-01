@@ -8,6 +8,10 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
+import com.readr.model.module.plan.ProcPlan;
+import com.readr.model.module.plan.ProcPlanRunRequest;
+import com.readr.model.module.plan.ProcPlanStep;
+
 public class RunClient {
 
 	private Client client;
